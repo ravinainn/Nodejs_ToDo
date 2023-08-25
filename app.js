@@ -22,7 +22,7 @@ app.use(cookieParser());
 //     methods: ["GET","POST","PUT","DELETE"],
 //     credentials: true,
 // }))
-const allowedOrigins = ['http://localhost:5173']; // Add your frontend URL here
+const allowedOrigins = ['http://localhost:3000']; // Add your frontend URL here
 const corsOptions = {
   origin: function (origin, callback) {
     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
